@@ -1,5 +1,5 @@
 # exercicio 1 -> Certo
-""" idade = input("Digite a faixa etária: ")
+idade = input("Digite a faixa etária: ")
 
 if idade == 'Bebê':
   print("menor que 2 anos")
@@ -10,10 +10,10 @@ if idade == 'Adolescente':
 if idade == 'Adulto':
   print("de 18 a 64 anos")
 if idade == 'Idoso':
-  print("maior que 65 anos") """
+  print("maior que 65 anos")
 
 # Exercicio 2 -> Certo
-""" prod1 = int(input("Digite o valor do primeiro produto: "))
+prod1 = int(input("Digite o valor do primeiro produto: "))
 prod2 = int(input("Digite o valor do segundo produto: "))
 prod3 = int(input("Digite o valor do terceiro produto: "))
 
@@ -24,10 +24,10 @@ if totalCompra > 500.00:
   print("Desconto: %.2f" %desconto)
 else: # totalCompra < 500.00:
   desconto = totalCompra * (10/100)
-  print("Desconto: %.2f" %desconto) """
+  print("Desconto: %.2f" %desconto)
 
 # Exercicio 3 -> Certo
-""" lados = int(input())
+lados = int(input())
 
 if lados == 3 :
   print ("triângulo")
@@ -46,10 +46,10 @@ elif lados == 9 :
 elif lados == 10 :
   print ("decágono")
 else:
-  print('Erro!') """
+  print('Erro!')
 
 # Exercicio 4
-""" valorCompra = float(input("Digite o valor da compra: "))
+valorCompra = float(input("Digite o valor da compra: "))
 parcelas = int(input("Digite a quantidade de parcelas: "))
 
 if valorCompra > 5000:
@@ -75,10 +75,10 @@ if parcelas > 3:
 
 print("Desconto total: %.2f" %desconto)
 print("Valor final da compra com desconto: %.2f" %total)
-print("Cada parcela será de: %.2f" %valorParcelas) """
+print("Cada parcela será de: %.2f" %valorParcelas)
 
 # Exercicio 5 -> Certo
-""" from math import *
+from math import *
 
 calc = input("Você deseja calcular o volume do dodecaedro ou icosaedro: ")
 aresta = int(input('Digite o valor da aresta a em metros: '))
@@ -89,10 +89,10 @@ if calc == "dodecaedro":
   
 else:
   V = ((5 / 12) * (3 + sqrt(5))) * (aresta**3)
-  print('O volume de um icosaedro regular com {0:.2f} de aresta é: {1:.2f}'.format(aresta, V)) """
+  print('O volume de um icosaedro regular com {0:.2f} de aresta é: {1:.2f}'.format(aresta, V))
 
 # Exercicio 6 -> Certo
-""" mes = input()
+mes = input()
 
 if mes == 'janeiro':
   print('31 dias')
@@ -117,18 +117,18 @@ elif mes == 'outubro':
 elif mes == 'novembro':
   print('30 dias')
 else:
-  print('31 dias') """
+  print('31 dias')
 
 # Exercicio 7 -> Certo
-""" ovo = float(input('Digite a medida do ovo: '))
+ovo = float(input('Digite a medida do ovo: '))
 
 if ovo < 30:
   print('pequeno')
 else:
-  print('grande') """
+  print('grande')
 
 # Exercicio 8 -> Certo
-""" vazao = float(input('Digite a vazão da bomba em l/s: '))
+vazao = float(input('Digite a vazão da bomba em l/s: '))
 capacidade = int(input('Digite a capacidade do reservatório: '))
 
 total =  capacidade / vazao
@@ -144,4 +144,4 @@ total = total - (minuto*60)
 resSeg = total % 60
 seg = total
 
-print('Tempo necessário para encher o reservatório: {0:.0f}:{1:.0f}:{2:.0f}'.format(hora, minuto, resSeg)) """
+print('Tempo necessário para encher o reservatório: {0:.0f}:{1:.0f}:{2:.0f}'.format(hora, minuto, resSeg))
