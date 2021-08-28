@@ -1,15 +1,15 @@
 # Exercicio 1
-""" letra = input("Digite a letra desejada: ")
+letra = input("Digite a letra desejada: ")
 
 if (letra == 'a') or (letra == 'e') or (letra == 'i') or (letra == 'o') or (letra == 'u'):
   print('Essa letra é uma vogal')
 elif letra == 'y':
   print('Essa letra, em algumas línguas, pode ser considerada como uma vogal e, em outras, como uma consoante.')
 else:
-  print('Essa letra é uma consoante.') """
+  print('Essa letra é uma consoante.')
 
 # Exercicio 2
-""" dia = int(input('Digite o dia desejado: '))
+dia = int(input('Digite o dia desejado: '))
 mes = input('Digite o mês desejado: ')
 
 if mes == 'março':
@@ -43,10 +43,10 @@ if mes == 'dezembro':
     print('Verão')
 if mes == 'janeiro' or mes == 'fevereiro':
   if (1 <= dia <= 31):
-    print('Verão') """
+    print('Verão')
 
 # Exercicio 3
-""" nota = input('Digite a nota em letra, e o sinal +/-: ')
+nota = input('Digite a nota em letra, e o sinal +/-: ')
 
 if (nota == 'A') or (nota == 'A+'):
   print('%s é equivalente a 5.0' %nota)
@@ -71,10 +71,10 @@ elif nota == 'D':
 elif nota == 'F':
   print('%s é equivalente a 0.0' %nota)
 else:
-  print('Nota inválida') """
+  print('Nota inválida')
 
 # Exercicio 4
-""" num = int(input('Digite a linha desejada: '))
+num = int(input('Digite a linha desejada: '))
 letra = input('Digite a coluna desejada: ')
 
 if ((letra == 'a') or (letra == 'c') or (letra == 'e') or (letra == 'g')) and (num % 2 == 0):
@@ -82,12 +82,13 @@ if ((letra == 'a') or (letra == 'c') or (letra == 'e') or (letra == 'g')) and (n
 elif ((letra == 'b') or (letra == 'd') or (letra == 'f') or (letra == 'h')) and (num % 2 != 0):
   print('Branco')
 else:
-  print('Preto') """
+  print('Preto')
   
 
 # Exercicio 5
 ano = int(input('Digite um ano: '))
 
+# Metodo 1
 animal = ano % 12
 
 if animal == 1:
@@ -117,8 +118,9 @@ if animal == 11:
 if animal == 12:
   print('%d é o ano do(a) Macaco' %ano)
 
-# animal = ['Galo', 'Cachorro', 'Porco', 'Rato', 'Boi', 'Tigre', 'Lebre', 'Dragão', 'Cobra', 'Cavalo', 'Carneiro', 'Macaco']
+# Metodo 2
+animal = ['Macaco', 'Galo', 'Cachorro', 'Porco', 'Rato', 'Boi', 'Tigre', 'Lebre', 'Dragão', 'Cobra', 'Cavalo', 'Carneiro']
 
-# resto = animal[ano % 12]
+resto = animal[ano % 12]
 
-# print('{0} é o ano do(a) {1}'.format(ano, resto))
+print('{0} é o ano do(a) {1}'.format(ano, resto))
