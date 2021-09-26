@@ -4,27 +4,20 @@
 # - Quantos litros de combustível cada um dos carros cadastrados consome para percorrer uma distância de 1000 quilômetros.
 carros = []
 consumo = []
-mais = ''
-results = ''
-carro = ''
-con = ''
 
-while len(carros) < 5:
-  carros.append(input(''))
-  consumo.append(int(input('')))
+for x in range(5):
+    carros.append(input())
 
-for i in range(len(carros)):
-  results += '{}\n'.format(round(1000/consumo[i]))
-  carro += '{}\n'.format(carros[i])
-  con += '{}\n'.format(consumo[i])
-  
-  if consumo[i] == max(consumo):
-    mais = carros[i]
+i = 0
+for x in range(5):
+    consumo.append(int(input()))
+    if consumo[x] > consumo[i]:
+        i = x
 
-print(carro)
-print(con)
-print(mais)
-print(results)
+print(carros[i])
+
+for x in consumo:
+    print(round(1000/x))
 
 # Exercicio 2
 # Crie um programa que leia números inteiros do usuário até que o número 0 seja inserido. Uma vez que todos os números inteiros tenham sido lidos, seu programa deve exibir todos os números negativos, seguidos por todos os números positivos. Dentro de cada grupo, os números devem ser exibidos na mesma ordem em que foram inseridos pelo usuário
