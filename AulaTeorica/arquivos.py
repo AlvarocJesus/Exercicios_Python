@@ -1,5 +1,5 @@
 # Escrever um arquivo
-arquivo = open('teste.txt', 'w')
+""" arquivo = open('teste.txt', 'w')
 
 for linha in range(0,1000):
   arquivo.write('Dado %d\n' %linha)
@@ -125,51 +125,43 @@ def novoArquivos(num_unicos):
 
 listaNum()
 listaDeUnicos(num)
-novoArquivos(num_unicos)
+novoArquivos(num_unicos) """
 
 # Exercicio 4
-import os
 import os
 
 def create():
   nome = input('Digite seu nome: ')
   sobrenome = input('Digite seu sobrenome: ')
   telefone = input('Digite seu telefone: ')
-  email = input("Digite o email: ")
+  email = input('Digite seu email: ')
   agenda = open(nome+'_'+sobrenome+'.txt', 'w')
-  agenda.write('%s %s' %(nome, telefone))
+  agenda.write('%s %s' %(telefone, email))
   agenda.close()
-  print("\nCadastro feito\n")
+  print('Contato criado com sucesso!')
 
 def read():
-  print()
-  nome = input("digite o nome: ")
-  sobrenome = input("digite o sobrenome: ")
-  arquivo = open(nome+"_"+sobrenome + ".txt", "r")
-  lista = arquivo.readlines()
-  print(lista)
-  print()
+  nome = input('Digite seu nome: ')
+  sobrenome = input('Digite seu sobrenome: ')
+  agenda = open(nome+'_'+sobrenome+'.txt', 'r')
+  print(agenda.readlines())
+  agenda.close()
 
 def update():
-  print()
-  nome = input("digite o nome: ")
-  sobrenome = input("digite o sobrenome: ")
-  telefone = input("digite o novo telefone: ")
-  email = input("Digite o novo email: ")
-  arquivo = open(nome+"_"+sobrenome + ".txt", "w")
-  arquivo.write("%s %s" % (telefone, email))
-  print("Contato atualizado")
-  print()
-  arquivo.close()
+  nome = input('Digite seu nome: ')
+  sobrenome = input('Digite seu sobrenome: ')
+  agenda = open(nome+'_'+sobrenome+'.txt', 'w')
+  telefone = input('Digite seu novo telefone: ')
+  email = input('Digite seu novo email: ')
+  agenda.write('%s %s' % (telefone, email))
+  print('Contato atualizado com sucesso!')
+  agenda.close()
 
 def delete():
-  print()
-  nome = input("digite o nome: ")
-  sobrenome = input("digite o sobrenome: ")
-  os.remove(nome+"_"+sobrenome + ".txt")
-  print("Contato deletado\n")
-  print()
-
+  nome = input('Digite seu nome: ')
+  sobrenome = input('Digite seu sobrenome: ')
+  os.remove(nome+'_'+sobrenome+'.txt')
+  print('Contato deletado com sucesso!')
 
 while True:
   print(" 1 - Novo contato\n 2 - Procura (pelo nome)\n 3 - Atualiza contato\n 4 - Apaga contato \n 0 - Sair")
