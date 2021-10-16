@@ -51,18 +51,18 @@ def spellChecker(palavra):
   incorrect = []
   arq = open('./words.txt', 'r')
   for i in arq.readlines():
-    listaArq.append(i.strip())
+    listaArq.append(i.lower().strip())
   arq.close()
   
-  listaWord = palavra.replace(',', '').split()
+  listaWord = palavra.lower().replace(',', '').split()
   
   for lWord in range(len(listaWord)):
     if listaWord[lWord] not in listaArq:
       incorrect.append(listaWord[lWord])
   return incorrect
 
-
 print(spellChecker("Hello World, Olá Mundo"))
+
 
 # Exercicio 5
 # Jogo da forca
@@ -70,6 +70,69 @@ palavraSecreta = input('Digite a palavra secreta:')
 erro = 0
 repetidas = []
 letras = '-' * len(palavraSecreta)
+erro1 = '''
+X==:==
+X  :  
+X  O  
+X     
+X     
+X     
+===========
+'''
+erro2 = '''
+X==:==
+X  :  
+X  O  
+X  |  
+X     
+X     
+===========
+'''
+erro3 = '''
+X==:==
+X  :  
+X  O  
+X \|  
+X     
+X     
+===========
+'''
+erro4 = '''
+X==:==
+X  :  
+X  O  
+X \|/  
+X    
+X     
+===========
+'''
+erro5 = '''
+X==:==
+X  :  
+X  O  
+X \|/  
+X /  
+X     
+===========
+'''
+erro6 = '''
+X==:==
+X  :  
+X  O  
+X \|/  
+X / \ 
+X     
+===========
+'''
+acerto = '''
+X==:==
+X  :  
+X    
+X   
+X  
+X     
+===========
+'''
 print('\n\n\n\n\n\n\n\n\n\n', letras)
 
 while True:
@@ -81,80 +144,31 @@ while True:
     if chute in palavraSecreta:
       index = palavraSecreta.find(chute)
       print()
-      print('''
-      X==:==
-      X  :  
-      X    
-      X     
-      X     
-      X     
-      ===========
-      ''')
-      # letras.replace(palavraSecreta.find(chute), chute)
+      print(acerto)
       letras = letras[0:palavraSecreta.find(chute)] + chute + letras[palavraSecreta.find(chute)+1:]
+      print(letras)
       
     else:
       erro += 1
       repetidas.append(chute)
       print('Você errou!')
       if erro == 1:
-        print('''X==:==\n
-        X  :  
-        X  O  
-        X     
-        X     
-        X     
-        ===========
-        ''')
+        print()
+        print(erro1)
       if erro == 2:
-        print('''
-        X==:==
-        X  :  
-        X  O  
-        X  |  
-        X     
-        X     
-        ===========
-        ''')
+        print()
+        print(erro2)
       if erro == 3:
-        print('''
-        X==:==
-        X  :  
-        X  O  
-        X \|  
-        X     
-        X     
-        ===========
-        ''')
+        print()
+        print(erro3)
       if erro == 4:
-        print('''
-        X==:==
-        X  :  
-        X  O  
-        X \|/  
-        X    
-        X     
-        ===========
-        ''')
+        print()
+        print(erro4)
       if erro == 5:
-        print('''
-        X==:==
-        X  :  
-        X  O  
-        X \|/  
-        X /  
-        X     
-        ===========
-        ''')
+        print()
+        print(erro5)
       if erro == 6:
-        print('''
-        X==:==
-        X  :  
-        X  O  
-        X \|/  
-        X / \ 
-        X     
-        ===========
-        ''')
-        print('Enforcado!')  
+        print()
+        print(erro6)
+        print('\nEnforcado!')  
         break
