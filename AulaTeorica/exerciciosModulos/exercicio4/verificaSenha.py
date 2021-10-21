@@ -8,10 +8,9 @@ def tamanhoMin(senha):
 # Pelo menos uma letra maiúscula
 def letraMaiuscula(senha):
   maiuscula = 0
-  listaSenha = senha.split()
-  for i in listaSenha:
-    if i.isupper():
-      maiuscula+1
+  for i in range(len(senha)):
+    if senha[i].isupper():
+      maiuscula+=1
   if maiuscula >= 1:
     return True
   else:
@@ -21,10 +20,9 @@ def letraMaiuscula(senha):
 # Pelo menos uma letra minúscula
 def letraMinuscula(senha):
   minuscula = 0
-  listaSenha = senha.split()
-  for i in listaSenha:
-    if i.islower():
-      minuscula+1
+  for i in range(len(senha)):
+    if senha[i].islower():
+      minuscula+=1
   if minuscula >= 1:
     return True
   else:
@@ -33,10 +31,9 @@ def letraMinuscula(senha):
 # Pelo menos um número
 def umNum(senha):
   num = 0
-  listaSenha = senha.split()
-  for i in listaSenha:
-    if i.isdigit():
-      num+1
+  for i in range(len(senha)):
+    if senha[i].isdigit():
+      num+=1
   if num >= 1:
     return True
   else:

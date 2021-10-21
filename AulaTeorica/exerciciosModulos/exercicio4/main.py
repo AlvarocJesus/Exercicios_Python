@@ -1,19 +1,21 @@
 import verificaSenha
 
-senha = input('Digite sua senha: ')
+def main():
+  senha = input('Digite sua senha: ')
 
-boaSenha = 0
+  if verificaSenha.tamanhoMin(senha):
+    if verificaSenha.letraMaiuscula(senha):
+      if verificaSenha.letraMinuscula(senha):
+        if verificaSenha.umNum(senha):
+          print('Senha forte!')
+        else:
+          print('Senha tem que ter pelo menos 1 numero')
+      else:
+        print('Senha tem que ter pelo menos 1 uma letra minúscula')
+    else:
+      print('Senha tem que ter pelo menos 1 maiúscula')
+  else:
+    print('Senha tem que ter pelo menos 8 caracteres')
 
-if verificaSenha.tamanhoMin(senha):
-  boaSenha += 1
-elif verificaSenha.letraMaiuscula(senha):
-  boaSenha += 1
-elif verificaSenha.letraMinuscula(senha):
-  boaSenha += 1
-elif verificaSenha.umNum(senha):
-  boaSenha +=1
-
-if boaSenha == 5:
-  print(True)
-else:
-  print(False)
+if __name__ == '__main__':
+  main()

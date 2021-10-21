@@ -1,5 +1,9 @@
 import capitalizaFrase
 
-frase = input('Digite o texto que deseja corrigir: ')
+def main():
+  frase = input('Digite o texto que deseja corrigir: ')
 
-print(capitalizaFrase.capitalizaFrase(frase))
+  print('Frase corrigida:', capitalizaFrase.capitalizaFrase(frase))
+
+if __name__ == '__main__':
+  main()
