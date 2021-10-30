@@ -131,11 +131,10 @@ def numero_texto(num):
   if tamanho == 1:
     if num in unidade:
       lista.append(unidade[num])
-  if tamanho == 2:
-    print(num[0])
+  elif tamanho == 2:
     if num[0] == '1':
       if num in unidade2:
-        lista.append(dezena[num])
+        lista.append(unidade2[num])
     else:
       if num[0] in dezena:
         lista.append(dezena[num[0]])
