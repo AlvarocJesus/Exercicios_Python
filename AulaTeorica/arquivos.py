@@ -1,5 +1,5 @@
 # Escrever um arquivo
-""" arquivo = open('teste.txt', 'w')
+arquivo = open('teste.txt', 'w')
 
 for linha in range(0,1000):
   arquivo.write('Dado %d\n' %linha)
@@ -125,7 +125,7 @@ def novoArquivos(num_unicos):
 
 listaNum()
 listaDeUnicos(num)
-novoArquivos(num_unicos) """
+novoArquivos(num_unicos)
 
 # Exercicio 4
 import os
