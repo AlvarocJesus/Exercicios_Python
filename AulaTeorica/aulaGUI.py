@@ -1,4 +1,4 @@
-from tkinter import *
+""" from tkinter import *
 from tkinter import messagebox
 
 janela = Tk()
@@ -96,10 +96,10 @@ btn.place(relx=0.5, rely=0.8, anchor=CENTER)
 btn = Button(janela, text='Soma', font=('Arial', 16), command=clique)
 btn.place(relx=0.6, rely=0.8, anchor=CENTER)
 
-janela.mainloop() 
+janela.mainloop()  """
 
 """ -------------------------------------------------  """
-# Exercicio 1
+""" # Exercicio 1
 from tkinter import *
 
 window = Tk()
@@ -175,7 +175,8 @@ def confirma():
 btn = Button(window, text='Verificar', font=('Arial', 14), command=confirma)
 btn.place(relx=0.5, rely=0.5, anchor=CENTER)
 
-window.mainloop() 
+window.mainloop() """
+
 # Exercicio 3
 from tkinter import *
 
@@ -187,25 +188,66 @@ entrada = Entry(window, width=58, font=('Arial', 14))
 entrada.place(relx=0.5, rely=0.2, anchor=CENTER)
 
 tecla = Button(window, text='0', font=('Arial', 14))
+tecla.place()
+
 tecla1 = Button(window, text='1', font=('Arial', 14))
+tecla.place()
+
 tecla2 = Button(window, text='2', font=('Arial', 14))
+tecla.place()
+
 tecla3 = Button(window, text='3', font=('Arial', 14))
+tecla.place()
+
 tecla4 = Button(window, text='4', font=('Arial', 14))
+tecla.place()
+
 tecla5 = Button(window, text='5', font=('Arial', 14))
+tecla.place()
+
 tecla6 = Button(window, text='6', font=('Arial', 14))
+tecla.place()
+
 tecla7 = Button(window, text='7', font=('Arial', 14))
+tecla.place()
+
 tecla8 = Button(window, text='8', font=('Arial', 14))
+tecla.place()
+
 tecla9 = Button(window, text='9', font=('Arial', 14))
+tecla.place()
+
 teclaIgual = Button(window, text='=', font=('Arial', 14))
+tecla.place()
+
 teclaSeno = Button(window, text='sen', font=('Arial', 14))
+tecla.place()
+
 teclaCos = Button(window, text='cos', font=('Arial', 14))
+tecla.place()
+
 teclaTg = Button(window, text='tg', font=('Arial', 14))
+tecla.place()
+
 teclaMais = Button(window, text='+', font=('Arial', 14))
+tecla.place()
+
 teclaMenos = Button(window, text='-', font=('Arial', 14))
+tecla.place()
+
 teclaMult = Button(window, text='x', font=('Arial', 14))
+tecla.place()
+
 teclaDiv = Button(window, text='/', font=('Arial', 14))
+tecla.place()
+
 teclaExp = Button(window, text='^', font=('Arial', 14))
+tecla.place()
+
 teclaRaiz = Button(window, text='√', font=('Arial', 14))
+tecla.place()
+
 clear = Button(window, text='C', font=('Arial', 14))
+tecla.place()
 
 window.mainloop()
