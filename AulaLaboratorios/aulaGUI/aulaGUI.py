@@ -19,8 +19,7 @@ def incidenciaPalavras():
   
   for i in range(len(arqWord)):
     for k in range(len(arqWord[i])):
-      if word.lower() == arqWord[i][k].lower():
-        print('you'=='your')
+      if word.lower() == arqWord[i][k].lower().replace('!', '').replace('?', '').replace(',', '').replace('.', '').replace(': -)', '').replace('*', ''):
         arqWord[i][-1] = arqWord[i][-1]+'\n\n'
         txt.insert(1.0, ' '.join(arqWord[i]))
         frequencia+=1
