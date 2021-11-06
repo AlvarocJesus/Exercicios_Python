@@ -7,7 +7,7 @@ window.geometry('600x500')
 
 def incidenciaPalavras():
   frequency.delete(0, END)
-  txt.delete(END, END)
+  txt.delete(1.0, END)
   frequencia = 0
   word = suspectWord.get()
   
@@ -19,7 +19,8 @@ def incidenciaPalavras():
   
   for i in range(len(arqWord)):
     for k in range(len(arqWord[i])):
-      if word.lower() in arqWord[i][k].lower():
+      if word.lower() == arqWord[i][k].lower():
+        print('you'=='your')
         arqWord[i][-1] = arqWord[i][-1]+'\n\n'
         txt.insert(1.0, ' '.join(arqWord[i]))
         frequencia+=1
