@@ -1,0 +1,6 @@
+ID: 61722
+Nome: aaaa
+Data de Nascimento: ['04', '06', '2001']
+Idade: 20
+Endereço: alvvaro
+Profissão: Aluno
