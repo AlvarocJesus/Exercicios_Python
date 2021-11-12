@@ -15,9 +15,9 @@ def criarUsuario():
   print(id)
   cpf = entryCpf.get()
   nome = entryName.get()
-  dataNascimento = entrydataNascimento.get().replace('-', '/').split('/')
-  endereco = entryendereco.get()
-  profissao = entryprofissao.get()
+  dataNascimento = entryDataNascimento.get().replace('-', '/').split('/')
+  endereco = entryEndereco.get()
+  profissao = entryProfissao.get()
   
   idade = date.today().year - int(dataNascimento[-1])
   
@@ -57,14 +57,14 @@ entryCpf.place(relx=0.7, rely=0.15, anchor=CENTER)
 entryName = Entry(window, width=15, font=('Arial', 14))
 entryName.place(relx=0.7, rely=0.25, anchor=CENTER)
 
-entrydataNascimento = Entry(window, width=15, font=('Arial', 14))
-entrydataNascimento.place(relx=0.7, rely=0.35, anchor=CENTER)
+entryDataNascimento = Entry(window, width=15, font=('Arial', 14))
+entryDataNascimento.place(relx=0.7, rely=0.35, anchor=CENTER)
 
-entryendereco = Entry(window, width=15, font=('Arial', 14))
-entryendereco.place(relx=0.7, rely=0.5, anchor=CENTER)
+entryEndereco = Entry(window, width=15, font=('Arial', 14))
+entryEndereco.place(relx=0.7, rely=0.5, anchor=CENTER)
 
-entryprofissao = Entry(window, width=15, font=('Arial', 14))
-entryprofissao.place(relx=0.7, rely=0.65, anchor=CENTER)
+entryProfissao = Entry(window, width=15, font=('Arial', 14))
+entryProfissao.place(relx=0.7, rely=0.65, anchor=CENTER)
 
 btn = Button(window, text='Cadastrar', command=criarUsuario)
 btn.place(relx=0.48, rely=0.8, anchor=CENTER)
