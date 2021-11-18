@@ -1,0 +1,6 @@
+Marca do veículo: marca
+Modelo: modelo
+Ano de fabricação: 41-41-4141
+Placa: aaaaaab
+Km: 90
+acessorios: Ar Condicionado, Direcao Hidraulica
