@@ -1,12 +1,12 @@
 # Exercicio 1
 def minimo(x,y):
-  if x < y:
+  if y < x:
     return y
   else:
     return x
 
 def maximo(x, y):
-  if x > y:
+  if y > x:
     return y
   else:
     return x
@@ -159,9 +159,6 @@ N=[]
 for i in range(10):
   N.append(int(input()))
 
-# for k in range(len[N]):
-#   print(N[k])
-
 reverse=[]
 for i in range(len(N)-1,-1,-1):
   print(i)
@@ -172,21 +169,23 @@ for i in range(len(reverse)):
   
 
 # Exercicio 8
-a1,b1,c1=2,3,1
+a1=2
+b1=3
+c1=1
 
 if(a1==b1)and(b1%2==0):
   c1=0
-if(a1<b1)and(c1>0):
+elif(a1<b1)and(c1>0):
   c1=1
-if(a1 > b1) and (c1==1):
+elif(a1 > b1) and (c1==1):
   c1 = 2
-if(a1<b1)and(a1%2==0):
+elif(a1<b1)and(a1%2==0):
   c1=3
-if(a1<b1)and(b1%2==0):
+elif(a1<b1)and(b1%2==0):
   c1=4
-if(a1<b1):
+elif(a1<b1):
   c1=5
-if(a1>b1):
+elif(a1>b1):
   c1=6
 else:
   c1 = 7
